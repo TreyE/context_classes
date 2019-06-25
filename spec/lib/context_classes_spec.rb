@@ -42,7 +42,9 @@ context_1:
     end
 
     it "resolves the class name" do
-      expect(ContextClasses.resolve_class_name("context_1.key_1")).to eq("::ContextClassConfigSpecs::CheckedContextConfig")
+      expect(
+        ContextClasses.resolve_class_name("context_1.key_1")
+      ).to eq("::ContextClassConfigSpecs::CheckedContextConfig")
     end
   end
 end

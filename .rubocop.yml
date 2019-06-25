@@ -1,0 +1,26 @@
+Layout/IndentHeredoc:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/lib/context_classes_spec.rb
+    - spec/lib/context_classes/context_validator_spec.rb
+    - spec/lib/context_classes/yaml_loader_spec.rb
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 25
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyLiteral:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false

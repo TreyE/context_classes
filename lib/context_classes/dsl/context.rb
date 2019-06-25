@@ -20,12 +20,12 @@ module ContextClasses
 
       def compile
         compiled_results = Hash.new
-        child_keys = @contexts.map do |context|
+        @contexts.each do |context|
           context.compile.each_pair do |k, v|
             compiled_results[@name.to_s + "." + k.to_s] = v
           end
         end
-        keys = @keys.map do |key|
+        @keys.each do |key|
           compiled_results[@name.to_s + "." + key.name.to_s] = key
         end
         compiled_results

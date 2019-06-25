@@ -13,7 +13,7 @@ module ContextClasses
     def resolve_class(key)
       @classes[key.to_s]
     end
-  
+
     def resolve_class_name(key)
       @class_names[key.to_s]
     end

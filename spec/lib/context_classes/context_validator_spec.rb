@@ -2,13 +2,12 @@ require "spec_helper"
 
 RSpec.describe ContextClasses::ContextValidator do
   describe "given missing configuration mappings" do
-
     let(:config_specification) do
-      {"expected_key" => nil}
+      { "expected_key" => nil }
     end
 
     let(:config_file_mappings) do
-      {"some_other_key" => nil}
+      { "some_other_key" => nil }
     end
 
     it "errors" do
@@ -23,7 +22,7 @@ RSpec.describe ContextClasses::ContextValidator do
 
   describe "given invalid constants" do
     let(:config_file_mappings) do
-      {"some_other_key" => "BLARGLEIsNotAValidCOnstnat"}
+      { "some_other_key" => "BLARGLEIsNotAValidCOnstnat" }
     end
 
     it "errors" do
@@ -41,15 +40,15 @@ RSpec.describe ContextClasses::ContextValidator do
     end
 
     let(:config_specification) do
-      {"expected_key" => dsl_key}
+      { "expected_key" => dsl_key }
     end
 
     let(:config_file_mappings) do
-      {"expected_key" => "Integer"}
+      { "expected_key" => "Integer" }
     end
 
     before do
-      allow(dsl_key).to receive(:verify_provided).with(Integer).and_return({:kind_of => "String"})
+      allow(dsl_key).to receive(:verify_provided).with(Integer).and_return({ kind_of: "String" })
     end
 
     it "errors" do

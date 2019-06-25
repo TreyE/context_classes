@@ -11,7 +11,7 @@ module ContextClasses
     end
 
     def configure_using(klass)
-      resolved_context = ContextValidator.build_and_validate_using(klass) 
+      resolved_context = ContextValidator.build_and_validate_using(klass)
       Thread.current[:_context_classes_registry_context] = resolved_context
     end
 

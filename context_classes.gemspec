@@ -6,8 +6,7 @@ Gem::Specification.new do |s|
   s.summary = "A simple, configurable constant resolver."
   s.description = "A simple, configurable constant resolver. Includes optional constraints."
   s.license = "MIT"
-  s.files = [
-    "lib/context_classes.rb"
-  ]
+  s.files = Dir["lib/**/*.rb"]
   s.require_paths = ["lib"]
+  s.extra_rdoc_files = Dir["README.md"]
 end

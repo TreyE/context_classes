@@ -25,7 +25,7 @@ module ContextClasses
         options.each_pair do |k, v|
           opts[k.to_s] = v
         end
-        if opts.has_key?("kind_of")
+        if opts.key?("kind_of")
           @requires_kind_of = Object.const_get(opts["kind_of"])
         end
       end

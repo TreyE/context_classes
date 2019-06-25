@@ -1,7 +1,6 @@
 require "spec_helper"
 
 RSpec.describe ContextClasses::YamlLoader do
-
   describe "given an invalid file path" do
     it "errors" do
       expect do
@@ -16,10 +15,10 @@ RSpec.describe ContextClasses::YamlLoader do
   context_1:
     sub_context_1:
       key_1: String
-  
+
   context_2:
     key_2: String
-  
+
   context_3:
     key_3: Integer
     subcontext_2:
