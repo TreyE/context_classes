@@ -87,3 +87,5 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+require File.join(File.dirname(__FILE__), "..", "lib", "context_classes")
