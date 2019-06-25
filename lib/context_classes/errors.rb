@@ -4,5 +4,6 @@ module ContextClasses
     class InvalidConfigFilePathError < StandardError; end
     class MissingMappingsError < StandardError; end
     class InvalidConstantsSpecifiedError < StandardError; end
+    class ProvidedConstraintViolationError < StandardError; end
   end
 end
